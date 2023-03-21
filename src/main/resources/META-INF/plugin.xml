@@ -3,6 +3,9 @@
   <id>com.github.musinapolina.xmlelementslocation</id>
   <name>XML-elements-location Template</name>
   <vendor>musinapolina</vendor>
+  <description>
+    This is an IDE plugin that provides a mechanism for locating XML elements within a document that would work even after their content is changed.
+  </description>
 
   <depends>com.intellij.modules.platform</depends>
 
