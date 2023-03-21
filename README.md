@@ -4,7 +4,7 @@
 
 This is an IDE plugin that provides a mechanism for locating XML elements within a document that would work even after their content is changed. The plugin can be used by technical writers who use XML to describe content, and later HTML is generated from this XML.
 
-##Usage
+## Usage
 To generate persistent identifiers for XML elements, follow these steps:
 
 1. Open an XML document in your IDE.
@@ -18,7 +18,7 @@ To locate an element in the document using its persistent ID, follow these steps
 3. The search results will show you the location of the element in the document, even if its content has been changed since the ID attribute was generated.
 4. The generated link could be renamed or removed by right-click on the element in the toolbar.
 
-##Limitations
+## Limitations
 - The plugin only works with XML documents and XML elements.
 - The plugin cannot guarantee that the generated IDs will be completely persistent, as changes to the document structure may still cause them to become outdated.
 
