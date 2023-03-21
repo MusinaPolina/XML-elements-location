@@ -1,18 +1,28 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.musinapolina.xmlelementslocation</id>
-    <name>XML-elements-location Template</name>
-    <vendor>musinapolina</vendor>
+  <id>com.github.musinapolina.xmlelementslocation</id>
+  <name>XML-elements-location Template</name>
+  <vendor>musinapolina</vendor>
 
-    <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.platform</depends>
 
-    <resource-bundle>messages.MyBundle</resource-bundle>
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow
+      factoryClass="com.github.musinapolina.xmlelementslocation.toolWindow.MyToolWindowFactory"
+      id="XML elements"/>
+  </extensions>
 
-    <extensions defaultExtensionNs="com.intellij">
-        <toolWindow factoryClass="com.github.musinapolina.xmlelementslocation.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
-    </extensions>
+  <extensions defaultExtensionNs="com.intellij">
+    <toolWindow id="Sample Calendar" secondary="true" icon="AllIcons.General.Modified"
+      anchor="right"
+      factoryClass="com.github.musinapolina.xmlelementslocation.toolWindow.MyToolWindowFactory"/>
+  </extensions>
 
-    <applicationListeners>
-        <listener class="com.github.musinapolina.xmlelementslocation.listeners.MyFrameStateListener" topic="com.intellij.ide.FrameStateListener"/>
-    </applicationListeners>
+  <actions>
+    <action class="com.github.musinapolina.xmlelementslocation.actions.Location" id="Location"
+      text="Location XML Elements">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+      <keyboard-shortcut first-keystroke="control alt A" second-keystroke="A" keymap="$default"/>
+    </action>
+  </actions>
 </idea-plugin>
