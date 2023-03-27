@@ -8,7 +8,7 @@ would work even after their content is changed. The plugin can be used by techni
 XML to describe content, and later HTML is generated from this XML.
 <!-- Plugin description end -->
 
-##Usage
+## Usage
 To generate persistent identifiers for XML elements, follow these steps:
 
 1. Open an XML document in your IDE.
@@ -24,8 +24,7 @@ To locate an element in the document using its persistent ID, follow these steps
    has been changed since the ID attribute was generated.
 4. The generated link could be renamed or removed by right-click on the element in the toolbar.
 
-##Limitations
-
+## Limitations
 - The plugin only works with XML documents and XML elements.
 - The plugin cannot guarantee that the generated IDs will be completely persistent, as changes to
   the document structure may still cause them to become outdated.
@@ -46,5 +45,4 @@ To locate an element in the document using its persistent ID, follow these steps
 Plugin based on the [IntelliJ Platform Plugin Template][template].
 
 [template]: https://github.com/JetBrains/intellij-platform-plugin-template
-
 [docs:plugin-description]: https://plugins.jetbrains.com/docs/intellij/plugin-user-experience.html#plugin-description-and-presentation
